@@ -100,7 +100,7 @@
     return `
       <div class="reveal ${extra}">
         <button class="reveal-btn">
-          <span><span class="ico">${icon}</span> ${label}</span>
+          <span>${icon}&nbsp;&nbsp;${label}</span>
           <span class="chev">›</span>
         </button>
         <div class="reveal-body"><div class="inhalt">${inhalt || ""}</div></div>
