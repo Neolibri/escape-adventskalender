@@ -14,19 +14,21 @@ laufenden Kosten.
 | Datei / Ordner        | Wofür                                                              |
 |-----------------------|--------------------------------------------------------------------|
 | `index.html`          | Die App selbst                                                     |
-| `js/inhalte.js`       | **HIER deine Texte eintragen** (Hinweise + Lösungen, 24 Tage)      |
-| `js/config.js`        | Einstellungen: Titel, Farben (grob), Testmodus, Freischaltung      |
-| `css/styles.css`      | Design im Detail (Farben, Rundungen, Schrift)                     |
-| `js/app.js`           | Technik – musst du normalerweise nicht anfassen                   |
+| `inhalte.js`          | **HIER deine Texte eintragen** (Hinweise + Lösungen, 24 Tage)      |
+| `config.js`           | Einstellungen: Titel, Farben (grob), Testmodus, Freischaltung      |
+| `styles.css`          | Design im Detail (Farben, Rundungen, Schrift)                     |
+| `app.js`              | Technik – musst du normalerweise nicht anfassen                   |
 | `manifest.json`, `service-worker.js` | Machen die Seite zur installierbaren App           |
-| `icons/`              | App-Icons (Platzhalter, kannst du später austauschen)             |
+| `icon-192.png`, `icon-512.png` | App-Icons (Platzhalter, kannst du später austauschen)    |
 | `qr-generator.html`   | Erzeugt alle QR-Codes, wenn deine Adresse steht                   |
+
+Alle Dateien liegen direkt nebeneinander (keine Unterordner).
 
 ---
 
 ## 1) Deine Texte eintragen
 
-Öffne `js/inhalte.js` mit einem beliebigen Texteditor. Für jeden Tag stehen
+Öffne `inhalte.js` mit einem beliebigen Texteditor. Für jeden Tag stehen
 dort vier Felder. Trage einfach deine echten Texte zwischen die
 Anführungszeichen ein:
 
@@ -42,8 +44,8 @@ Anführungszeichen ein:
 - `titel` darf leer sein: `titel: ""`
 - Zeilenumbruch im Text: `<br>`
 - Fett: `<b>...</b>`
-- Bild einfügen: lege es in einen neuen Ordner `bilder/` und schreibe
-  `<img src="bilder/tag1.jpg">` in den Text.
+- Bild einfügen: lade das Bild ins Repository und schreibe
+  `<img src="tag1.jpg">` in den Text.
 
 > Wenn du mir die Texte schickst, trage ich sie auch gern für dich ein.
 
@@ -56,23 +58,23 @@ Anführungszeichen ein:
   Vor dem Echteinsatz im Dezember auf `false` stellen.
 - `freischaltungNachDatum: true` – Tag X öffnet erst am X. Dezember.
 - `jahr: 2026` – auf das Jahr stellen, in dem der Kalender läuft.
-- `theme: { ... }` – schnelle Farbwahl. Feiner geht es oben in `css/styles.css`.
+- `theme: { ... }` – schnelle Farbwahl. Feiner geht es oben in `styles.css`.
 
 ---
 
 ## 3) Design später anpassen (wenn dein Cover da ist)
 
-**Cover einsetzen:** Bild (z.B. `cover.jpg`) in den Ordner `icons/` legen.
+**Cover einsetzen:** Bild (z.B. `cover.jpg`) ins Repository hochladen.
 In `index.html` die Zeile mit `<div class="cover" ...>` ersetzen durch:
 
 ```html
-<div class="cover"><img src="icons/cover.jpg" alt="Cover"></div>
+<div class="cover"><img src="cover.jpg" alt="Cover"></div>
 ```
 
-**Farben:** in `css/styles.css` ganz oben im Block `:root` ändern – oder
-schneller in `js/config.js` unter `theme`.
+**Farben:** in `styles.css` ganz oben im Block `:root` ändern – oder
+schneller in `config.js` unter `theme`.
 
-**App-Icon:** `icons/icon-192.png` und `icons/icon-512.png` durch eigene
+**App-Icon:** `icon-192.png` und `icon-512.png` durch eigene
 Bilder gleicher Größe ersetzen.
 
 ---
@@ -83,8 +85,7 @@ Bilder gleicher Größe ersetzen.
 2. Oben rechts **+ → New repository**. Name z.B. `escape-adventskalender`,
    auf **Public** lassen, **Create repository**.
 3. Auf der neuen Seite **„uploading an existing file“** anklicken und
-   **den kompletten Inhalt dieses Ordners** hineinziehen (alle Dateien und
-   die Ordner `js`, `css`, `icons`). **Commit changes**.
+   **alle Dateien aus diesem Ordner** hineinziehen. **Commit changes**.
 4. Im Repository oben auf **Settings → Pages**.
 5. Unter **Branch** `main` und `/ (root)` wählen, **Save**.
 6. Nach ~1 Minute erscheint dort deine Adresse, z.B.

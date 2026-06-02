@@ -6,13 +6,13 @@ const CACHE = "adventskalender-v1";
 const DATEIEN = [
   "./",
   "./index.html",
-  "./css/styles.css",
-  "./js/config.js",
-  "./js/inhalte.js",
-  "./js/app.js",
+  "./styles.css",
+  "./config.js",
+  "./inhalte.js",
+  "./app.js",
   "./manifest.json",
-  "./icons/icon-192.png",
-  "./icons/icon-512.png"
+  "./icon-192.png",
+  "./icon-512.png"
 ];
 
 self.addEventListener("install", (e) => {
