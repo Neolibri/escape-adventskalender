@@ -5,8 +5,8 @@
 const CONFIG = {
 
   /* --- Titel & Texte -------------------------------------------------- */
-  titel:        "Escape-Adventskalender",
-  untertitel:   "24 Türchen voller Rätsel",
+  titel:        "Escape Room Adventskalender",
+  untertitel:   "Das Geheimnis der Polarexpedition",
 
   /* --- Freischaltung -------------------------------------------------- */
   // true  = Türchen öffnen sich erst am jeweiligen Dezember-Tag (echter Kalender)
