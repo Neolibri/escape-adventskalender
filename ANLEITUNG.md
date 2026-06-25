@@ -100,22 +100,21 @@ Diese Adresse ist deine fertige App. Öffne sie zum Testen am Handy.
 
 ---
 
-## 5) QR-Codes erstellen
+## 5) QR-Code erstellen
 
 1. Öffne `qr-generator.html` (Doppelklick öffnet sie im Browser).
 2. Trage oben **deine GitHub-Pages-Adresse** ein (mit `/` am Ende).
-3. **QR-Codes erzeugen** klicken.
-4. Du bekommst:
-   - **Haupt-Code** → öffnet die Übersicht (z.B. vorne ins Buch).
-   - **Tag 1 … Tag 24** → springen direkt zum jeweiligen Tag (auf die
-     jeweilige Buchseite).
-5. Einzeln als PNG herunterladen, oder **„Alle drucken / als PDF speichern“**.
+3. **QR-Code erzeugen** klicken.
+4. Du bekommst **einen QR-Code**, der immer die Übersicht (1.–24. Dezember)
+   öffnet.
+5. Als PNG herunterladen oder **„Drucken / als PDF speichern“** – dann ins
+   Buch einsetzen.
 
 ---
 
 ## So fühlt es sich für deine Gäste an
 
 QR-Code scannen → die App öffnet sich im Vollbild → sie sehen die Übersicht
-oder direkt den Tag → tippen auf **1. Hinweis**, später **2. Hinweis**, und
-zum Schluss **Lösung**. Optional „Zum Startbildschirm hinzufügen“, dann liegt
-der Kalender wie eine echte App auf dem Handy.
+1.–24. → tippen auf den Tag → dann auf **1. Hinweis**, später **2. Hinweis**,
+und zum Schluss **Lösung**. Optional „Zum Startbildschirm hinzufügen“, dann
+liegt der Kalender wie eine echte App auf dem Handy.

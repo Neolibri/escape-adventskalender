@@ -2,7 +2,7 @@
    Bei Inhaltsänderungen die CACHE-Version hochzählen (v1 -> v2 ...),
    damit Nutzer die neue Version bekommen. */
 
-const CACHE = "adventskalender-v1";
+const CACHE = "adventskalender-v2";
 const DATEIEN = [
   "./",
   "./index.html",
