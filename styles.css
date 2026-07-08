@@ -145,3 +145,12 @@ body {
 .install-tip.show { display: block; }
 .install-tip b { color: var(--akzent); }
 .install-tip .close { float: right; cursor: pointer; color: var(--text-leise); }
+
+/* Hinweis unter dem Untertitel (2026-07-08): Tage sind bis zum
+   jeweiligen Dezembertag gesperrt — damit niemand einen Fehler vermutet. */
+.header .unlock-hint {
+  margin-top: 10px;
+  font-size: 12.5px;
+  color: var(--text-leise);
+  opacity: .85;
+}
